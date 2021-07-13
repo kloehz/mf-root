@@ -31,12 +31,24 @@
       }
     }
   </script>
-  <% } %>
-  <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
-  <% if (isLocal) { %>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
   <% } %>
+
+  <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+        "@fpay/root-config": "https://https://github.com/kloehz/mf-root/fpay-root-config.js",
+        "@fpay/header": "https://1caf55937bbd28.localhost.run/fpay-header.js",
+        "@fpay/body": "https://07688c0eb509a7.localhost.run/fpay-body.js",
+        "@fpay/user": "https://77ab0ec6b9f1e3.localhost.run/fpay-user.js"
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
 
 </head>
 <body style="margin: 0">

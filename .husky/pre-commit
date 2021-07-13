@@ -2,4 +2,4 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npm exec pretty-quick --staged && npm exec concurrently npm:test npm:lint
-npm run-script build
+git add .
